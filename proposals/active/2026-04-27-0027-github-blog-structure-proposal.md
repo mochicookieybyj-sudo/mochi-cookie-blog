@@ -346,6 +346,8 @@ git@github.com:계정명/mochi-cookie-blog.git
 - `origin` remote를 `git@github-mochi:mochicookieybyj-sudo/mochi-cookie-blog.git`로 설정했다.
 - `gh auth login`은 브라우저 인증 대기 중 타임아웃되어 완료되지 않았다.
 - `git push -u origin main` 결과 GitHub에 `mochi-cookie-blog` repo가 아직 없어 `Repository not found`로 실패했다.
+- 사용자가 GitHub 웹에서 public repo `mochi-cookie-blog`를 생성했다.
+- 이후 `git push -u origin main`이 성공했고, 로컬 `main`이 `origin/main`을 추적하도록 설정됐다.
 
 ## 사용자 답변 필요 항목
 

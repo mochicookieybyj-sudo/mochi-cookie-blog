@@ -73,6 +73,6 @@ External AI draft files should include:
 
 - Register `~/.ssh/id_ed25519_mochi_cookie_blog.pub` in the dedicated GitHub account.
 - SSH authentication through `github-mochi` is working.
-- Create or connect the GitHub repository.
+- GitHub repository is connected and `main` has been pushed.
 - Install Ruby/Bundler or choose an alternate Jekyll preview runtime.
 - Validate the first localhost preview.
