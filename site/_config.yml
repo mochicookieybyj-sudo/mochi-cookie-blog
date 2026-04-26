@@ -1,0 +1,15 @@
+title: Mochi Cookie Blog
+description: Project notes and AI-assisted work logs
+baseurl: "/mochi-cookie-blog"
+url: "https://<account>.github.io"
+timezone: Asia/Seoul
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
