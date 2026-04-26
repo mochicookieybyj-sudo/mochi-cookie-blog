@@ -351,6 +351,8 @@ git@github.com:계정명/mochi-cookie-blog.git
 - `site/` 폴더를 GitHub Pages로 배포하기 위해 GitHub Actions workflow `.github/workflows/pages.yml`을 추가했다.
 - 첫 Pages workflow는 `Setup Pages` 단계에서 실패했다.
 - `site/`는 baseurl을 직접 지정하므로 `actions/configure-pages` 단계를 제거해 재시도하도록 수정했다.
+- 수정 후 GitHub Actions build/deploy가 모두 성공했다.
+- `https://mochicookieybyj-sudo.github.io/mochi-cookie-blog/` 접속 확인 결과 `200 OK` 응답을 받았다.
 
 ## 사용자 답변 필요 항목
 

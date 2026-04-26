@@ -75,6 +75,6 @@ External AI draft files should include:
 - Register `~/.ssh/id_ed25519_mochi_cookie_blog.pub` in the dedicated GitHub account.
 - SSH authentication through `github-mochi` is working.
 - GitHub repository is connected and `main` has been pushed.
-- Enable GitHub Pages with GitHub Actions if the repository setting is not automatically enabled.
+- GitHub Pages deployment is working at `https://mochicookieybyj-sudo.github.io/mochi-cookie-blog/`.
 - Install Ruby/Bundler or choose an alternate Jekyll preview runtime for local previews.
 - Validate the first localhost preview.
