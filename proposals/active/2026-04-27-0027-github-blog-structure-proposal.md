@@ -348,6 +348,7 @@ git@github.com:계정명/mochi-cookie-blog.git
 - `git push -u origin main` 결과 GitHub에 `mochi-cookie-blog` repo가 아직 없어 `Repository not found`로 실패했다.
 - 사용자가 GitHub 웹에서 public repo `mochi-cookie-blog`를 생성했다.
 - 이후 `git push -u origin main`이 성공했고, 로컬 `main`이 `origin/main`을 추적하도록 설정됐다.
+- `site/` 폴더를 GitHub Pages로 배포하기 위해 GitHub Actions workflow `.github/workflows/pages.yml`을 추가했다.
 
 ## 사용자 답변 필요 항목
 

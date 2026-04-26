@@ -52,3 +52,19 @@ git@github-mochi:mochicookieybyj-sudo/mochi-cookie-blog.git
 ## Publishing Rule
 
 Only publish posts after the user reviews the localhost preview.
+
+## GitHub Pages
+
+The site is stored in `site/`, so Pages is deployed through GitHub Actions.
+
+Workflow:
+
+```text
+.github/workflows/pages.yml
+```
+
+Expected Pages source:
+
+```text
+GitHub Actions
+```

@@ -20,6 +20,7 @@ This project manages a GitHub-based blog. It receives Markdown drafts from other
 - GitHub Pages URL style: project site
 - Expected public URL: `https://mochicookieybyj-sudo.github.io/mochi-cookie-blog/`
 - Final post review: user manually reviews localhost preview
+- GitHub Pages deployment: GitHub Actions workflow builds `site/` and deploys to Pages
 
 ## Current Structure
 
@@ -74,5 +75,6 @@ External AI draft files should include:
 - Register `~/.ssh/id_ed25519_mochi_cookie_blog.pub` in the dedicated GitHub account.
 - SSH authentication through `github-mochi` is working.
 - GitHub repository is connected and `main` has been pushed.
-- Install Ruby/Bundler or choose an alternate Jekyll preview runtime.
+- Enable GitHub Pages with GitHub Actions if the repository setting is not automatically enabled.
+- Install Ruby/Bundler or choose an alternate Jekyll preview runtime for local previews.
 - Validate the first localhost preview.
