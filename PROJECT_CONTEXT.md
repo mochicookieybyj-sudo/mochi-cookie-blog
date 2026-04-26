@@ -16,7 +16,7 @@ This project manages a GitHub-based blog. It receives Markdown drafts from other
 - GitHub connection method: SSH
 - GitHub SSH host alias: `github-mochi`
 - Important GitHub caution: the machine already has another GitHub account configured for a different purpose. Do not use that account for this blog.
-- Dedicated blog GitHub account status: not connected yet
+- Dedicated blog GitHub account status: connected
 - GitHub Pages URL style: project site
 - Expected public URL: `https://mochicookieybyj-sudo.github.io/mochi-cookie-blog/`
 - Final post review: user manually reviews localhost preview
@@ -78,8 +78,6 @@ External AI draft files should include:
 
 ## Next Known Work
 
-- Register `~/.ssh/id_ed25519_mochi_cookie_blog.pub` in the dedicated GitHub account.
-- SSH authentication through `github-mochi` is working.
-- GitHub repository is connected and `main` has been pushed.
-- GitHub Pages deployment is working at `https://mochicookieybyj-sudo.github.io/mochi-cookie-blog/`.
+- Initial GitHub blog setup is complete.
 - Use local Jekyll preview before publishing feature or post changes.
+- Active next topic: blog design refresh proposal in `proposals/active/`.
