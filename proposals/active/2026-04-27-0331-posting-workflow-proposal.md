@@ -60,6 +60,14 @@ links/
 
 ## md 파일 주고받는 방법
 
+이 PC에서 외부 AI와 파일을 주고받는 전용 루트는 다음으로 정한다.
+
+```text
+C:\Users\uesr\SynologyDriveMochiCookieBlog
+```
+
+외부 프로젝트/AI가 만든 파일은 먼저 이 공유 루트에 모으고, 이후 이 블로그 프로젝트의 `inbox`로 옮겨 처리한다.
+
 ### 1차 방식: inbox 원본 수집
 
 다른 프로젝트의 AI가 작성한 md 파일은 이 프로젝트의 `inbox/ai-drafts/{topic}/` 아래에 넣는다.
@@ -485,6 +493,7 @@ links/topics/elgato-stream-deck-plugin.md
 - 전체 포스팅 흐름 문서 `docs/posting-workflow.md`를 생성했다.
 - `docs/writing-guide.md`에 확정된 topic/frontmatter/link 후보 규칙을 반영했다.
 - `docs/templates/ai-draft-template.md`와 `docs/templates/publish-post-template.md`를 생성했다.
+- 외부 파일 공유 루트를 `C:\Users\uesr\SynologyDriveMochiCookieBlog`로 정하고 관련 문서에 반영했다.
 
 ## 사용자 답변 필요 항목
 

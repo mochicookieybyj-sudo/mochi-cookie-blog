@@ -4,6 +4,7 @@
 
 ```text
 external AI draft
+-> C:\Users\uesr\SynologyDriveMochiCookieBlog
 -> inbox/ai-drafts/{topic}/
 -> Codex editorial pass
 -> content/posts/{topic}/
@@ -22,6 +23,12 @@ elgato-stream-deck-plugin
 ```
 
 ## Draft Intake
+
+External sharing root:
+
+```text
+C:\Users\uesr\SynologyDriveMochiCookieBlog
+```
 
 Original drafts go here:
 

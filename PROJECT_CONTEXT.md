@@ -94,6 +94,12 @@ Posting workflow details are in:
 docs/posting-workflow.md
 ```
 
+External file sharing root on this PC:
+
+```text
+C:\Users\uesr\SynologyDriveMochiCookieBlog
+```
+
 ## Next Known Work
 
 - Initial GitHub blog setup is complete.

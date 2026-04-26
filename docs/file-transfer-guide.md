@@ -4,6 +4,8 @@
 
 ## 기본 원칙
 
+- 이 PC에서 외부 AI와 파일을 주고받는 전용 루트는 `C:\Users\uesr\SynologyDriveMochiCookieBlog`이다.
+- 외부 프로젝트/AI에서 생성한 파일은 먼저 이 공유 루트로 모은다.
 - 받은 원본 md 파일은 `inbox/ai-drafts/{topic}/`에 둔다.
 - 받은 이미지와 첨부 파일은 `inbox/assets/{topic}/`에 둔다.
 - 원본 파일은 가능한 한 수정하지 않는다.
@@ -66,11 +68,12 @@ content/posts/elgato-stream-deck-plugin/
 
 ## 사용자가 파일을 옮기는 순서
 
-1. 파일의 주제를 확인한다.
-2. md 파일명을 확인한다.
-3. md 파일을 `inbox/ai-drafts/{topic}/`에 넣는다.
-4. 이미지나 첨부 파일이 있으면 `inbox/assets/{topic}/`에 넣는다.
-5. Codex에게 어떤 파일을 포스팅 후보로 처리할지 알려준다.
+1. 외부 AI가 만든 파일을 `C:\Users\uesr\SynologyDriveMochiCookieBlog`에 모은다.
+2. 파일의 주제를 확인한다.
+3. md 파일명을 확인한다.
+4. md 파일을 이 프로젝트의 `inbox/ai-drafts/{topic}/`에 넣는다.
+5. 이미지나 첨부 파일이 있으면 이 프로젝트의 `inbox/assets/{topic}/`에 넣는다.
+6. Codex에게 어떤 파일을 포스팅 후보로 처리할지 알려준다.
 
 예:
 
@@ -84,6 +87,25 @@ inbox/assets/homeassistant/2026-04-27-homeassistant-dashboard-card-layout.png
 ```text
 homeassistant 초안 2026-04-27-001-homeassistant-dashboard-draft.md 포스팅용으로 정리해줘
 ```
+
+## 공유 루트 권장 구조
+
+공유 루트 안에서는 다음 구조를 권장한다.
+
+```text
+C:\Users\uesr\SynologyDriveMochiCookieBlog\
+  incoming\
+    homeassistant\
+    elgato-stream-deck-plugin\
+  assets\
+    homeassistant\
+    elgato-stream-deck-plugin\
+  guides\
+```
+
+- `incoming/{topic}/`: 외부 AI가 만든 md 초안
+- `assets/{topic}/`: 외부 AI가 전달한 이미지/첨부 파일
+- `guides/`: 외부 AI에게 전달할 작성 가이드 zip 또는 md
 
 ## 채팅으로 내용을 전달하는 경우
 
