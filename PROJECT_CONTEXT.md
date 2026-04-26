@@ -46,15 +46,21 @@ docs/
 
 The preview site is a Jekyll site in `site/`.
 
-Ruby and Bundler are required to run the preview locally:
+Ruby 3.3 with MSYS2 DevKit is installed locally at `C:\Ruby33-x64`.
+
+Run the preview locally:
 
 ```text
 cd site
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --baseurl=
 ```
 
-At the time this file was created, Ruby was not available in the local shell.
+Preview URL:
+
+```text
+http://127.0.0.1:4000/
+```
 
 ## Draft Intake Standard
 
@@ -76,5 +82,4 @@ External AI draft files should include:
 - SSH authentication through `github-mochi` is working.
 - GitHub repository is connected and `main` has been pushed.
 - GitHub Pages deployment is working at `https://mochicookieybyj-sudo.github.io/mochi-cookie-blog/`.
-- Install Ruby/Bundler or choose an alternate Jekyll preview runtime for local previews.
-- Validate the first localhost preview.
+- Use local Jekyll preview before publishing feature or post changes.

@@ -15,6 +15,16 @@
 2. Preserve the source draft.
 3. Create a publish-ready version under `content/posts/`.
 4. Add related links, backlinks, tags, and series metadata.
-5. Preview through the local Jekyll site.
+5. Preview through the local Jekyll site at `http://127.0.0.1:4000/`.
 6. User performs final review.
 7. Push approved content to GitHub.
+
+## Local Preview
+
+Run from `site/`:
+
+```text
+bundle exec jekyll serve --baseurl=
+```
+
+Use this preview before pushing feature or post changes.

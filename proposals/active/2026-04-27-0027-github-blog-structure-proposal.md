@@ -353,6 +353,29 @@ git@github.com:계정명/mochi-cookie-blog.git
 - `site/`는 baseurl을 직접 지정하므로 `actions/configure-pages` 단계를 제거해 재시도하도록 수정했다.
 - 수정 후 GitHub Actions build/deploy가 모두 성공했다.
 - `https://mochicookieybyj-sudo.github.io/mochi-cookie-blog/` 접속 확인 결과 `200 OK` 응답을 받았다.
+- 사용자가 공개 전 직접 확인할 수 있도록 표준 Jekyll 로컬 미리보기 방식을 선택했다.
+- Ruby 3.3 with MSYS2 DevKit을 설치했다.
+- Windows Jekyll timezone 의존성 문제를 해결하기 위해 `site/Gemfile`에 `tzinfo`, `tzinfo-data`를 추가했다.
+- `bundle install`이 성공했다.
+- `bundle exec jekyll build --baseurl=` 로컬 빌드가 성공했다.
+- `bundle exec jekyll serve --baseurl= --host 127.0.0.1 --port 4000` 서버 실행 후 `http://127.0.0.1:4000/` 접속 확인 결과 `200 OK` 응답을 받았다.
+
+로컬 미리보기 방식:
+
+- 공개 전 사용자가 직접 화면과 동작을 확인할 수 있도록 표준 Jekyll 로컬 미리보기를 사용한다.
+- Windows 환경에 Ruby와 Bundler를 설치한 뒤 `site/` 폴더에서 Jekyll 서버를 실행한다.
+- 로컬 미리보기 주소는 `http://localhost:4000`을 기본으로 사용한다.
+- GitHub Pages의 `baseurl` 때문에 로컬 실행 시에는 `--baseurl ""` 옵션을 사용한다.
+- 포스트나 기능을 공개하기 전에는 로컬 미리보기에서 먼저 확인하고, 통과한 변경만 GitHub에 push한다.
+
+예상 검수 흐름:
+
+1. `site/`에서 Jekyll 로컬 서버 실행
+2. `http://localhost:4000`에서 사용자가 직접 확인
+3. 문제가 있으면 로컬에서 수정
+4. 미리보기 통과 후 commit
+5. GitHub push
+6. GitHub Actions 배포 결과 확인
 
 ## 사용자 답변 필요 항목
 
@@ -367,6 +390,7 @@ git@github.com:계정명/mochi-cookie-blog.git
 7. 외부 AI md 최소 형식: Codex가 정한 표준 형식 사용
 8. GitHub Pages 공개 URL 형식: `https://계정명.github.io/mochi-cookie-blog/`
 9. GitHub 연결 방식: SSH
+10. 로컬 미리보기: Ruby/Bundler 기반 Jekyll 로컬 서버 사용
 
 현재 사용자 답변 필요 항목:
 
