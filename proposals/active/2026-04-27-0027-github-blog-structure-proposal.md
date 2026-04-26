@@ -341,6 +341,11 @@ git@github.com:계정명/mochi-cookie-blog.git
 - 이 PC에는 다른 용도의 GitHub 계정이 이미 설정되어 있으므로, 블로그 repo에는 기본 `github.com` SSH host를 사용하지 않는다.
 - 블로그 repo remote는 반드시 `git@github-mochi:mochicookieybyj-sudo/mochi-cookie-blog.git` 형식을 사용한다.
 - GitHub SSH 연결 테스트 결과 `mochicookieybyj-sudo` 계정으로 인증 성공했다.
+- 로컬 첫 커밋 `09ae455 Initial blog management scaffold`를 생성했다.
+- 기본 브랜치를 `main`으로 변경했다.
+- `origin` remote를 `git@github-mochi:mochicookieybyj-sudo/mochi-cookie-blog.git`로 설정했다.
+- `gh auth login`은 브라우저 인증 대기 중 타임아웃되어 완료되지 않았다.
+- `git push -u origin main` 결과 GitHub에 `mochi-cookie-blog` repo가 아직 없어 `Repository not found`로 실패했다.
 
 ## 사용자 답변 필요 항목
 
