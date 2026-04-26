@@ -349,6 +349,8 @@ git@github.com:계정명/mochi-cookie-blog.git
 - 사용자가 GitHub 웹에서 public repo `mochi-cookie-blog`를 생성했다.
 - 이후 `git push -u origin main`이 성공했고, 로컬 `main`이 `origin/main`을 추적하도록 설정됐다.
 - `site/` 폴더를 GitHub Pages로 배포하기 위해 GitHub Actions workflow `.github/workflows/pages.yml`을 추가했다.
+- 첫 Pages workflow는 `Setup Pages` 단계에서 실패했다.
+- `site/`는 baseurl을 직접 지정하므로 `actions/configure-pages` 단계를 제거해 재시도하도록 수정했다.
 
 ## 사용자 답변 필요 항목
 
