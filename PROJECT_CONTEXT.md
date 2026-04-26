@@ -76,6 +76,24 @@ External AI draft files should include:
 - Issues or limitations
 - Reference links
 
+Detailed draft rules for external AIs are in:
+
+```text
+docs/ai-draft-guide.md
+```
+
+User-facing file transfer instructions are in:
+
+```text
+docs/file-transfer-guide.md
+```
+
+Posting workflow details are in:
+
+```text
+docs/posting-workflow.md
+```
+
 ## Next Known Work
 
 - Initial GitHub blog setup is complete.
